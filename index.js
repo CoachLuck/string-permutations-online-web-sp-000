@@ -8,8 +8,10 @@ function find(str, start, end, arr) {
   }
 
   for (let i = start; i < end; i++) {
+    console.log(str)
     str = swap(str, start, i)
     find(str, start + 1, end, arr)
+    console.log(str, "\n")
     arr.push(str)
   }
 
