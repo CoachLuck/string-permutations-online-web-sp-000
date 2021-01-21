@@ -8,4 +8,4 @@ function findAllPermutations(str) {
   return arr;
 }
 
-console.log(findAllPermutations("ab"))
+console.log(findAllPermutations("abc"))
