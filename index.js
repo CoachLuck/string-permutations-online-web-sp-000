@@ -12,7 +12,6 @@ function find(str, start, end, arr) {
   for (let i = start; i < end; i++) {
     str = swap(str, start, i)
     find(str, start + 1, end, arr)
-    str = swap(str, start, i)
     arr.push(str)
   }
 
