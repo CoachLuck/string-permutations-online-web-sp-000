@@ -15,7 +15,7 @@ function find(str, start, end, arr) {
     str = swap(str, start, i)
     arr.push(str)
   }
-  
+
   return arr
 }
 
