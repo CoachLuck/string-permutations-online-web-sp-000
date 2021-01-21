@@ -11,7 +11,7 @@ function find(str, start, end) {
   for (let i = start; i < end; i++) {
     str = swap(str, start, i)
     find(str, start + 1, end)
-    str = swap(str, start, i)
+    //str = swap(str, start, i)
     console.log(str)
   }
 }
