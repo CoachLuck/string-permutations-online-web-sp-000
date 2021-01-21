@@ -13,6 +13,7 @@ function find(str, start, end, arr) {
     find(str, start + 1, end, arr)
     console.log(str, "\n")
     arr.push(str)
+    console.log("added,", str)
   }
 
   return arr
