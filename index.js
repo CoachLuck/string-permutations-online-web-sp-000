@@ -29,5 +29,3 @@ function swap(str, start, current) {
 
   return k.join("")
 }
-
-console.log(findAllPermutations("abc"))
