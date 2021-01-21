@@ -14,6 +14,7 @@ function find(str, start, end) {
     find(str, start + 1, end)
     arr.push(str)
   }
+  return arr
 }
 
 function swap(str, start, current) {
