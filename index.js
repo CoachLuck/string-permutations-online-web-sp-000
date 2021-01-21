@@ -1,5 +1,6 @@
 function findAllPermutations(str) {
   let arr = []
+  find(str, 0, 3)
   return arr;
 }
 
