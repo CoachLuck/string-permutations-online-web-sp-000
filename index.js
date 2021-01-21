@@ -21,8 +21,8 @@ function swap(str, start, current) {
   let ch;
 
   ch = k[start]
-  k[start] = b[current]
-  b[current] = ch;
+  k[start] = k[current]
+  k[current] = ch;
 
   return k.join("")
 }
