@@ -1,6 +1,6 @@
 function findAllPermutations(str) {
   let arr = [str]
-  for (let i = 1; i < str.length; i++) {
+  for (let i = 0; i < str.length; i++) {
     console.log(str[i])
   }
 
