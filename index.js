@@ -1,20 +1,28 @@
 function findAllPermutations(str) {
   let arr = []
-  for (let i = 0; i < str.length; i++) {
-    let e = str[i];
-    console.log(e + str.substring(0, i) + str.substring(i + 1, str.length))
-  }
+
 
   return arr;
 }
 
-function swap(str, i, j) {
+function find(str, start, end) {
+  if (start == end - 1) {
+    return str;
+  }
+  for (let i = start; i < end; i++) {
+    str = swap(str, start, i)
+    find(str, start + 1, end)
+    str = swap(str, start, i)
+  }
+}
+
+function swap(str, start, current) {
   let k = str.split("")
   let ch;
 
-  ch = k[i]
-  k[i] = b[j]
-  b[j] = ch;
+  ch = k[start]
+  k[start] = b[current]
+  b[current] = ch;
 
   return k.join("")
 }
