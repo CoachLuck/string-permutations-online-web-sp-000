@@ -14,8 +14,8 @@ function find(str, start, end, arr) {
     console.log(str, "\n")
     let x = arr.filter(e => e == str)
     if (x.length > 0) continue
-    arr.push(str)
 
+    arr.push(str)
     console.log("added,", str)
   }
 
