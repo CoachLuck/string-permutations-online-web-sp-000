@@ -1,7 +1,7 @@
 function findAllPermutations(str) {
   let arr = []
 
-  return find(str, 0, 3);
+  return find(str, 0, 3, arr);
 }
 
 function find(str, start, end, arr) {
