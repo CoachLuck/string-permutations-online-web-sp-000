@@ -4,7 +4,7 @@ function findAllPermutations(str) {
   return find(str, 0, 3);
 }
 
-function find(str, start, end) {
+function find(str, start, end, arr) {
   let arr = [];
   if (start == end - 1) {
     return str;
@@ -15,6 +15,7 @@ function find(str, start, end) {
     str = swap(str, start, i)
     arr.push(str)
   }
+  
   return arr
 }
 
