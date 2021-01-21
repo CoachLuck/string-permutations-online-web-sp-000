@@ -5,13 +5,14 @@ function findAllPermutations(str) {
 }
 
 function find(str, start, end) {
+  let arr = [];
   if (start == end - 1) {
     return str;
   }
   for (let i = start; i < end; i++) {
     str = swap(str, start, i)
     find(str, start + 1, end)
-    console.log(str)
+    arr.push(str)
   }
 }
 
