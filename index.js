@@ -8,4 +8,15 @@ function findAllPermutations(str) {
   return arr;
 }
 
+function swap(str, i, j) {
+  let k = str.split("")
+  let ch;
+
+  ch = k[i]
+  k[i] = b[j]
+  b[j] = ch;
+
+  return k.join("")
+}
+
 console.log(findAllPermutations("abc"))
