@@ -8,15 +8,12 @@ function find(str, start, end, arr) {
   }
 
   for (let i = start; i < end; i++) {
-    console.log(str)
     str = swap(str, start, i)
     find(str, start + 1, end, arr)
-    console.log(str, "\n")
     let x = arr.filter(e => e == str)
     if (x.length > 0) continue
 
     arr.push(str)
-    console.log("added,", str)
   }
 
   return arr
