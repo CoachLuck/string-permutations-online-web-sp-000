@@ -1,7 +1,5 @@
 function findAllPermutations(str) {
   let arr = []
-  console.log(find(str, 0, str.length))
-
   return arr;
 }
 
@@ -13,6 +11,7 @@ function find(str, start, end) {
     str = swap(str, start, i)
     find(str, start + 1, end)
     str = swap(str, start, i)
+    console.log(str)
   }
 }
 
